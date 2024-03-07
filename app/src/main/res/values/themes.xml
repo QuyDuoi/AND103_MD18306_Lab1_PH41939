@@ -6,5 +6,7 @@
         <item name="colorPrimaryVariant">#FF9800</item>
     </style>
 
-    <style name="Theme.Lab1_MD18306_PH41939" parent="Base.Theme.Lab1_MD18306_PH41939" />
+    <style name="Theme.Lab1_MD18306_PH41939" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#FFC107</item>
+    </style>
 </resources>

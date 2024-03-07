@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Button.Cancel" parent="Widget.Material3.Button.TextButton">
+        <item name="android:backgroundTint">#F44336</item> <!-- Màu nền của nút Cancel -->
+    </style>
+
+    <!-- Style cho nút Add -->
+    <style name="Button.Add" parent="Widget.Material3.Button.TextButton">
+        <item name="android:backgroundTint">#FFC107</item> <!-- Màu nền của nút Add -->
+    </style>
+</resources>

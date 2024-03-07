@@ -44,7 +44,6 @@ public class DangNhapPhone extends AppCompatActivity {
         edtOTP = findViewById(R.id.edtOTP);
         btnDangNhap = findViewById(R.id.btnDangNhapOTP);
         btnLayOTP = findViewById(R.id.btnLayOTP);
-
         mCallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
             @Override
             public void onVerificationCompleted(@NonNull PhoneAuthCredential credential) {
@@ -53,7 +52,7 @@ public class DangNhapPhone extends AppCompatActivity {
 
             @Override
             public void onVerificationFailed(@NonNull FirebaseException e) {
-
+                Toast.makeText(DangNhapPhone.this, "Gửi OTP thất bại", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -125,7 +124,7 @@ public class DangNhapPhone extends AppCompatActivity {
                         if (task.isSuccessful()){
                             Toast.makeText(DangNhapPhone.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
                             FirebaseUser user = task.getResult().getUser();
-                            startActivity(new Intent(DangNhapPhone.this, DangXuat.class));
+                            startActivity(new Intent(DangNhapPhone.this, MainActivity.class));
                         } else {
                             Log.w("Main", "Đăng nhập thất bại", task.getException());
                         }
